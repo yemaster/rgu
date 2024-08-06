@@ -1,0 +1,169 @@
+body {
+    overflow: hidden;
+}
+
+.vt-link:hover {
+    cursor: pointer;
+}
+
+a,
+a:visited {
+    color: #1780db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a5f9f;
+}
+
+.vt-menu {
+    transition: all .2s !important;
+}
+
+.vt-menu-0 {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.vt-menu-1 {
+    background-color: #283593 !important;
+    color: #fff !important;
+}
+
+.vt-background {
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s !important;
+}
+
+.vt-background::after {
+    content: "";
+    background-image: linear-gradient(to top right, rgba(26, 35, 126, .6), rgba(57, 73, 171, .6));
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s !important;
+}
+
+.vt-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    z-index: 100;
+    transition: all .2s !important;
+}
+
+
+.vt-box-1 {
+    height: calc(100vh - 50px);
+    width: 100vw;
+    transition: all .2s !important;
+}
+
+.vt-background.small,
+.vt-background.small::after,
+.vt-header.small {
+    height: 40vh;
+}
+
+.vt-box-1.small {
+    height: calc(40vh - 50px);
+}
+
+.vt-header-text {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.vt-header-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60vw;
+    max-width: 800px;
+    min-width: 320px;
+}
+
+.vt-header.small .vt-header-box {
+    transform: translate(-50%, calc(-50% + 32px));
+}
+
+.vt-body-header {
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+.vt-card-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+    margin-bottom: .25rem;
+}
+
+.vt-card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.vt-divider {
+    margin: 1.25rem 0;
+}
+
+.vt-article h1 {
+    font-size: 2rem;
+}
+
+.vt-article h2 {
+    font-size: 1.75rem;
+}
+
+.vt-article h3 {
+    font-size: 1.5rem;
+}
+
+.vt-article h4 {
+    font-size: 1.375rem;
+}
+
+.vt-article h5 {
+    font-size: 1.25rem;
+}
+
+.vt-article h6 {
+    font-size: 1.125rem;
+}
+
+.vt-article h1,
+.vt-article h2,
+.vt-article h3,
+.vt-article h4,
+.vt-article h5,
+.vt-article h6 {
+    margin: .875rem 0;
+    font-weight: 300;
+}
+
+.vt-article img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.vt-article p {
+    margin: .5rem 0;
+    line-height: 1.5;
+}
