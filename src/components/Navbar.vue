@@ -38,6 +38,9 @@ if (props.homepage) {
 else {
     appBarMode.value = 2
 }
+
+// 投稿的对话框控制
+const dialog = ref(false);
 </script>
 
 <template>
@@ -51,6 +54,17 @@ else {
         <v-spacer></v-spacer>
         <v-btn @click="gotoLink('/')">首页</v-btn>
         <v-btn @click="gotoLink('/readme')">说在最前</v-btn>
-        <v-btn>投稿</v-btn>
+        <v-btn @click="dialog = true">投稿</v-btn>
     </v-app-bar>
+
+    <v-dialog v-model="dialog" width="auto">
+        <v-card max-width="400" prepend-icon="mdi-information-box-outline" title="投稿">
+            <template v-slot:text>
+                发送邮件至：<a href="mailto:me@yemaster.cn">me@yemaster.cn</a> 或者联系QQ: 1440169768
+            </template>
+            <template v-slot:actions>
+                <v-btn class="ms-auto" text="好的" @click="dialog = false"></v-btn>
+            </template>
+        </v-card>
+    </v-dialog>
 </template>
